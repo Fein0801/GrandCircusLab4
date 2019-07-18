@@ -6,9 +6,9 @@ public class Lab4 {
 
     public static void main(String[] args) {
 
+	Scanner scan = new Scanner(System.in);
 	// hard coded maximum value, might change later
 	int max = 1000;
-	Scanner scan = new Scanner(System.in);
 	int num = 0;
 
 	String choice = "yes";
@@ -31,11 +31,12 @@ public class Lab4 {
 
 	System.out.println();
 
-	int randomNum = (int) (Math.random() * 6) + 10;
+	int randomNum = (int) (Math.random() * 6) + 10; // Picks a random number between 10 and 15
 	System.out.printf("Here is a multiplication table for all the numbers between 1 and %d:  %n", randomNum);
 	printMultiplicationTable(randomNum);
 
 	System.out.println("Goodbye.");
+
 	scan.close();
     }
 
@@ -59,7 +60,7 @@ public class Lab4 {
     private static void printMultiplicationTable(int a) {
 	for (int i = 1; i <= a; i++) {
 	    for (int j = 1; j <= a; j++) {
-		System.out.printf("%-5s |", i * j + " ");
+		System.out.printf("%-5s|", i * j + " ");
 	    }
 	    System.out.println();
 	}

@@ -33,7 +33,7 @@ public class Lab4 {
 
 	int randomNum = (int) (Math.random() * 6) + 10; // Picks a random number between 10 and 15
 	System.out.printf("Here is a multiplication table for all the numbers between 1 and %d:  %n", randomNum);
-	printMultiplicationTable(randomNum);
+	printMultTable(randomNum);
 
 	System.out.println("Goodbye.");
 
@@ -57,7 +57,7 @@ public class Lab4 {
     }
 
     // prints a multiplication table
-    private static void printMultiplicationTable(int a) {
+    private static void printMultTable(int a) {
 	for (int i = 1; i <= a; i++) {
 	    for (int j = 1; j <= a; j++) {
 		System.out.printf("%-5s|", i * j + " ");

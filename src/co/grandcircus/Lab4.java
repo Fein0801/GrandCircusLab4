@@ -29,9 +29,13 @@ public class Lab4 {
 
 	} while (choice.equalsIgnoreCase("yes"));
 
+	System.out.println();
+
 	int randomNum = (int) (Math.random() * 6) + 10;
 	System.out.printf("Here is a multiplication table for all the numbers between 1 and %d:  %n", randomNum);
 	printMultiplicationTable(randomNum);
+
+	System.out.println("Goodbye.");
 	scan.close();
     }
 

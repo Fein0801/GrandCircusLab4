@@ -20,7 +20,7 @@ public class Lab4 {
 	    scan.nextLine(); // clear line here
 
 	    if (num > max) {
-		continue; // I found a decent excuse to use continue
+		continue; // Repeat prompt if user exceeds max value
 	    }
 	    printPowerTable(num);
 
@@ -31,7 +31,9 @@ public class Lab4 {
 
 	System.out.println();
 
-	int randomNum = (int) (Math.random() * 6) + 10; // Picks a random number between 10 and 15
+	// Picks a random number between 10 and 15
+	int randomNum = (int) (Math.random() * 6) + 10;
+
 	System.out.printf("Here is a multiplication table for all the numbers between 1 and %d:  %n", randomNum);
 	printMultTable(randomNum);
 
@@ -56,7 +58,7 @@ public class Lab4 {
 	System.out.printf("%-15s%-15s%-15s%n", str1, str2, str3);
     }
 
-    // prints a multiplication table
+    // prints a multiplication table from 1 to a
     private static void printMultTable(int a) {
 	for (int i = 1; i <= a; i++) {
 	    for (int j = 1; j <= a; j++) {

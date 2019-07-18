@@ -55,10 +55,11 @@ public class Lab4 {
 	System.out.printf("%-15s%-15s%-15s%n", str1, str2, str3);
     }
 
+    // prints a multiplication table
     private static void printMultiplicationTable(int a) {
 	for (int i = 1; i <= a; i++) {
 	    for (int j = 1; j <= a; j++) {
-		System.out.printf("%-5s", i * j + " ");
+		System.out.printf("%-5s |", i * j + " ");
 	    }
 	    System.out.println();
 	}
